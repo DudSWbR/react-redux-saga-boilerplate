@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { UnderConstruction } from "~/components/sections";
 import { Block } from "./styles";
-// import isMobile from "~/hooks/isMobile";
 import { scrollTop } from "~/utils/tools";
 
 export default function Home() {
@@ -33,7 +33,9 @@ export default function Home() {
           initial="exit"
           animate="enter"
           exit="exit"
-        ></motion.div>
+        >
+          <UnderConstruction />
+        </motion.div>
       </Block>
       {/* <Footer /> */}
     </>
