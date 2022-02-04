@@ -11,6 +11,7 @@ import {
   Success,
   Change,
   Label,
+  Voucher,
   SearchPoint,
 } from "./styles";
 
@@ -59,6 +60,9 @@ export default function Input({
           <MdWarning />
         </Error>
       );
+    }
+    if (icon === "VOUCHER") {
+      return <Voucher src={iconVoucher} />;
     }
     if (icon === "CHECK" && touched && !errors) {
       return <MdDone />;

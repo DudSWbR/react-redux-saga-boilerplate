@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import ReactSVG from 'react-svg';
 import { MdSearch } from 'react-icons/md';
 import theme from '~/styles/theme';
 
@@ -104,6 +105,9 @@ export const Change = styled.button`
 export const Label = styled.label`
   display: flex;
   justify-content: space-between;
+`;
+export const Voucher = styled(ReactSVG)`
+  cursor: pointer;
 `;
 export const SearchPoint = styled(MdSearch)`
   cursor: pointer;
